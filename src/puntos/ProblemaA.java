@@ -49,10 +49,12 @@ public class ProblemaA {
 				
 				if(conseguimos == true)
 				{
+					String hola = "";
 					for(int f = 0; f<resp.length;f++)
 					{
-						System.out.print(resp[f]+" ");
+						hola+=resp[f]+" ";
 					}
+					System.out.println(hola);
 				}
 				else
 					System.out.println("*");
