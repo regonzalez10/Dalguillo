@@ -71,7 +71,7 @@ public class ProblemaC {
 					//si en lo que va se encuentra un valor mayor, se actualiza maxV.
 					if(maxV<verticales[i][0] &&verticales[i][1]<verticales[i][0]){
 						maxV=verticales[i][0];
-					}else if(maxV<verticales[i][1]) {
+					}else if(maxV<verticales[i][1] && verticales[i][0]<verticales[i][i]) {
 						maxV=verticales[i][1];
 					}
 					i++;
