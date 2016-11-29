@@ -4,23 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//Ricardo Enrique Gonzalez Peñuela 201425733
+//Camilo Zambrano 201515438
+
 public class ProblemaB 
 {
 	
-	
-//	B Credibilidad
-//	Supóngase que se dispone de un arreglo A[0..n-1]:int, con n>0, que guarda el
-//	estado de una cuenta bancaria durante el intervalo de tiempo 0..n-1. Para 0≤p≤q≤n,
-//	se define cred(p,q), la credibilidad de la cuenta en el intervalo p..q-1,
-//	como la diferencia entre el número de valores positivos y negativos en el segmento, i.e.,
-//	cred(p,q) = (#i| p≤i<q : A[i]>0) - (#i| p≤i<q : A[i]<0).
-//	Problema
-//	Encontrar p,q tales que cred(p,q)sea máxima.
-//	Ejemplo:
-//	Supóngase A[0..9] =[-43,-43,-12,-20,39,42,27,-32,24,-47].
-//	En este caso se puede responder p=4, q=9. El segmento [39,42,27,-32,24] tiene 4 valores 
-//	positivos y uno negativo, de modo que cred(4,9)=3. Este valor es maximal dentro de A, 
-//	aunque también cred(4,7)=3, de modo que también se podría responder p=4, q=7.
 	
 	public static void main(String[] args) throws IOException 
 	{
