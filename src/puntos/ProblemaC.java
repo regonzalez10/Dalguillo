@@ -10,9 +10,8 @@ public class ProblemaC {
 	public static void main(String[] args) {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try{
-			while(br.ready()){
-				// empieza a leer la entrada, luego toma los 2 caractéres para el tamaño (m,n).
-				String r = br.readLine();
+			String r= br.readLine();
+			while(!r.equals("")){
 				String tam[] = r.split(" ");
 				int m =Integer.parseInt(tam[0]);//filas
 				int n =Integer.parseInt(tam[1]);//columnas
@@ -60,7 +59,9 @@ public class ProblemaC {
 						actualC=0;
 						j=0;
 						i++;
-						fila=br.readLine();
+						if(i!=m){						
+							fila=br.readLine();
+						}
 					}
 				}
 				//ahora es necesario recorrer la primera fila de la matriz verticales para encontrar cual fue la columna máxima.
@@ -82,6 +83,7 @@ public class ProblemaC {
 				}else{
 					System.out.println("V"+maxV);
 				}
+				r = br.readLine();
 			}
 
 		}catch (Exception e) {
