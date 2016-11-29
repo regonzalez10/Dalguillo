@@ -43,34 +43,34 @@ public class ProblemaB
 				String[] vals = valores.split(" ");
 				
 
-			
-				int ahorita =0;
-//				Credibilidad
+//				Credibilidad		
+				int r =0;
+//				Credibilidad centinela
 				int rcampeon = 0;
 				int p = 0;
 				int pcampeon = 0;
 				int qcampeon = -1;
-//				Ciclo interno, se calcula en cada paso la credibilidad y se compara con el sentinela
+//				Ciclo interno, se calcula en cada paso la credibilidad y se compara con el centinela, si en algun momento la credibilidad se vuelve negativa, se asume que ese subconjunto no es util, y se mueve el p(donde inicia el subconjunto)
 				for (int q = 0; q<tam;q++)
 					{
 
 					if(vals[q].startsWith("-"))
 					{
-						ahorita--;
+						r--;
 					}
 					else
 					{
 
-						ahorita++;
+						r++;
 					}
-					if(ahorita < 0)
+					if(r < 0)
 					{
-						ahorita= 0;
+						r= 0;
 						p = q +1;
 					}
-					if(rcampeon<ahorita)
+					if(rcampeon<r)
 					{
-						rcampeon = ahorita;
+						rcampeon = r;
 						pcampeon = p;
 						qcampeon = q;
 						
@@ -87,7 +87,7 @@ public class ProblemaB
 				}
 //				Se le suma 1 para que marque el rango correcto en expresion natural
 				qcampeon++;
-//				Al p no se le tiene que sumar porque comienza sobre el primer positivo
+//				Al p no se le tiene que sumar porque comienza sobre la posicion correcta
 				System.out.println(rcampeon+" "+pcampeon+" "+qcampeon);
 				 tamanio = br.readLine();
 			
