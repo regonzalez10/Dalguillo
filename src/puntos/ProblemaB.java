@@ -34,7 +34,7 @@ public class ProblemaB
 			String tamanio = br.readLine();
 			
 //			mientras existan mas casos (mas lineas)
-			while(tamanio!=null)
+			while(!tamanio.equals(""))
 			{
 				int tam = Integer.parseInt(tamanio);
 //				 Segunda linea contiene los numeros

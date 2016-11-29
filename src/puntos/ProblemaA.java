@@ -19,7 +19,7 @@ public class ProblemaA {
 			
 //			primera linea para saber el tamaño de n1.. n2.. n3...
 			String tamanio =br.readLine();
-			while(tamanio!=null)
+			while(!tamanio.equals(""))
 			{
 				String[] values = tamanio.split(" ");
 				int[] vals = new int[values.length-1];
